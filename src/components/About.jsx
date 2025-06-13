@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import myImage from "../assets/Loki-About.png";
 import {
   Code2,
   Figma,
@@ -149,7 +148,7 @@ const About = () => {
             <div className="relative w-52 h-52 xs:w-56 xs:h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-[20rem] lg:h-[20rem] rounded-2xl overflow-hidden shadow-xl border-2 border-orange-500/20 transform hover:scale-105 transition duration-300">
               <div className="w-full h-full bg-gradient-to-br from-orange-500/20 to-gray-800 flex items-center justify-center">
                 <img
-                  src={myImage}
+                  src="/Loki-About.png"
                   alt="Profile"
                   className="w-full h-full object-cover"
                 />
