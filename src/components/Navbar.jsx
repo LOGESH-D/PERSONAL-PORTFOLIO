@@ -18,7 +18,7 @@ const Navbar = () => {
     if (path === "/about") return "THIS IS ME";
     if (path === "/projects") return "THING'S I'VE BUILT";
     if (path === "/contact") return "SAY HI👋";
-    return "Welcome";
+    return (path === "/" || path === "/hero");
   };
 
   const handleResumeDownload = () => {
