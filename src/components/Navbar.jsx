@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-// import resume from "../assets/LOGESH-D.pdf";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -35,7 +34,7 @@ const Navbar = () => {
     <>
       <nav className="fixed top-4 left-0 right-0 z-50 bg-zinc-900/90 text-white shadow backdrop-blur-md mx-2 rounded-lg">
         <div className="flex items-center justify-between px-3 py-2 sm:px-4 md:px-8">
-          {/* Left - Logo */}
+          
           <button
             onClick={() => setShowResume(true)}
             className="text-base sm:text-xl font-bold text-orange-500"
@@ -43,12 +42,10 @@ const Navbar = () => {
             LOKiiii
           </button>
 
-          {/* Center - Dynamic Text */}
           <div className="flex-1 text-center text-sm sm:text-base font-semibold truncate px-2 text-white">
             {getCenterText()}
           </div>
 
-          {/* Right - Hamburger */}
           <div className="md:hidden">
             <button
               onClick={() => setMenuOpen(!menuOpen)}

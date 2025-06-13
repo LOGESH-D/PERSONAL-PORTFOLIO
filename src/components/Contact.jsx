@@ -63,7 +63,6 @@ const Contact = () => {
                 Get in Touch
               </h3>
 
-              {/* Location */}
               <div
                 className="flex items-start cursor-pointer hover:bg-gray-700/30 p-3 rounded-lg transition-all duration-200 group"
                 onClick={handleLocation}
@@ -81,7 +80,6 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* Email */}
               <div className="flex items-start cursor-pointer hover:bg-gray-700/30 p-3 rounded-lg transition-all duration-200 group">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-orange-500/20 flex items-center justify-center mr-3 sm:mr-4 flex-shrink-0 group-hover:bg-orange-500/30 transition-all">
                   <Mail className="text-orange-500" size={20} />
@@ -94,7 +92,6 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* Phone */}
               <div
                 className="flex items-start cursor-pointer hover:bg-gray-700/30 p-3 rounded-lg transition-all duration-200 group"
                 onClick={handleCall}
@@ -110,7 +107,6 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* Social Media */}
               <div className="pt-4 sm:pt-6 border-t border-gray-700">
                 <h4 className="text-sm sm:text-base font-medium text-white mb-4">
                   Connect with me

@@ -10,12 +10,6 @@ import {
   Github,
   Layers3,
 } from "lucide-react";
-// import foodImg from "../assets/food-logo.png";
-// import swmsImg from "../assets/SWMS.png";
-// import drawImg from "../assets/drawing-app.png";
-// import dreamspot from "../assets/dreamspot.png";
-// import chatbot from "../assets/chatbot.png";
-// import ecfigma from "../assets/ec-figma.png";
 
 const Project = () => {
   const [isVisible, setIsVisible] = useState(false);

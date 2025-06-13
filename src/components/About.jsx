@@ -133,7 +133,7 @@ const About = () => {
 
   return (
     <section className="bg-black text-white min-h-screen overflow-hidden relative">
-      {/* Grid overlay */}
+
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:50px_50px] opacity-30"></div>
 
       <div className="container mx-auto relative z-10 px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
@@ -143,7 +143,7 @@ const About = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          {/* Left side - Image */}
+
           <div className="w-full flex justify-center order-1 lg:order-1">
             <div className="relative w-52 h-52 xs:w-56 xs:h-56 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-[20rem] lg:h-[20rem] rounded-2xl overflow-hidden shadow-xl border-2 border-orange-500/20 transform hover:scale-105 transition duration-300">
               <div className="w-full h-full bg-gradient-to-br from-orange-500/20 to-gray-800 flex items-center justify-center">
@@ -156,7 +156,6 @@ const About = () => {
             </div>
           </div>
 
-          {/* Right side - Content */}
           <div className="space-y-4 sm:space-y-6 text-center lg:text-left order-2 lg:order-2">
             <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-extrabold leading-tight">
               I'M LOGESH D <br className="hidden sm:block" />
@@ -237,7 +236,7 @@ const About = () => {
             My <span className="text-orange-500">Skillset</span>
           </h2>
 
-          {/* Mobile Menu Toggle */}
+
           <div className="md:hidden mb-6">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -258,7 +257,7 @@ const About = () => {
               )}
             </button>
 
-            {/* Mobile Dropdown Menu */}
+
             {isMobileMenuOpen && (
               <div className="mt-2 bg-white/5 border border-white/10 rounded-xl overflow-hidden">
                 {Object.entries(skillCategories).map(([key, category]) => (
@@ -282,7 +281,6 @@ const About = () => {
             )}
           </div>
 
-          {/* Desktop Category Navigation */}
           <div className="hidden md:flex flex-wrap justify-center gap-2 lg:gap-4 mb-8 lg:mb-12 bg-white/5 p-2 rounded-2xl border border-white/10">
             {Object.entries(skillCategories).map(([key, category]) => (
               <button
@@ -317,7 +315,6 @@ const About = () => {
               </p>
             </div>
 
-            {/* Skills Grid */}
             <div className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-3 sm:gap-4 lg:gap-6">
               {skillCategories[activeSkillCategory].skills.map(
                 (skill, index) => (

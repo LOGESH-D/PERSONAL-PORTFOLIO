@@ -7,14 +7,13 @@ const Hero = () => {
   const [hovered, setHovered] = useState(null);
 
   useEffect(() => {
-    // Trigger entrance animations
     const timer = setTimeout(() => setIsVisible(true), 100);
     return () => clearTimeout(timer);
   }, []);
 
   return (
     <div className="min-h-screen bg-black text-white flex items-center justify-center px-4 sm:px-6 pt-20 relative overflow-hidden">
-      {/* Animated background elements */}
+
       <div className="absolute inset-0 overflow-hidden">
         <div
           className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-orange-500/10 blur-3xl animate-pulse"
@@ -26,7 +25,7 @@ const Hero = () => {
         ></div>
       </div>
 
-      {/* Grid overlay */}
+
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:50px_50px] opacity-30"></div>
 
       <div
@@ -34,7 +33,6 @@ const Hero = () => {
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
-        {/* Left Content */}
         <div className="flex flex-col space-y-6 md:w-1/2 text-center md:text-left">
           <div
             className={`flex items-center space-x-2 justify-center md:justify-start transition-all duration-700 delay-300 ${
@@ -68,7 +66,6 @@ const Hero = () => {
           </h1>
         </div>
 
-        {/* Right Content */}
         <div
           className={`flex flex-col space-y-8 items-center md:items-end text-center md:text-right md:w-1/2 mt-8 md:mt-0 transition-all duration-700 delay-700 ${
             isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10"
