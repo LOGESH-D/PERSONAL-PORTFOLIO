@@ -10,12 +10,12 @@ import {
   Github,
   Layers3,
 } from "lucide-react";
-import foodImg from "../assets/food-logo.png";
-import swmsImg from "../assets/SWMS.png";
-import drawImg from "../assets/drawing-app.png";
-import dreamspot from "../assets/dreamspot.png";
-import chatbot from "../assets/chatbot.png";
-import ecfigma from "../assets/ec-figma.png";
+// import foodImg from "../assets/food-logo.png";
+// import swmsImg from "../assets/SWMS.png";
+// import drawImg from "../assets/drawing-app.png";
+// import dreamspot from "../assets/dreamspot.png";
+// import chatbot from "../assets/chatbot.png";
+// import ecfigma from "../assets/ec-figma.png";
 
 const Project = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -41,7 +41,7 @@ const Project = () => {
       projects: [
         {
           title: "Chat-Bot",
-          image: chatbot,
+          image: "/chatbot.png",
           description:
             "A responsive food ordering interface built with modern frontend technologies",
           link: "https://github.com/LOGESH-D/Chat-Bot",
@@ -50,7 +50,7 @@ const Project = () => {
         },
         {
           title: "Dream spot ECommerce",
-          image: dreamspot,
+          image: "/dreamspot.png",
           description:
             "A responsive food ordering interface built with modern frontend technologies",
           link: "https://github.com/LOGESH-D/DREAM-SPOT-EC",
@@ -59,7 +59,7 @@ const Project = () => {
         },
         {
           title: "Drawing Web App",
-          image: drawImg,
+          image: "/drawing-app.png",
           description:
             "Interactive drawing application with various tools and features",
           link: "https://logesh-d.github.io/Drawing-web/",
@@ -75,7 +75,7 @@ const Project = () => {
       projects: [
         {
           title: "Food Ordering System",
-          image: foodImg,
+          image: "/food-logo.png",
           description: "A responsive food and table booking application",
           link: "https://logesh-d.github.io/food-ordering/",
           github: "https://github.com/LOGESH-D/food-ordering",
@@ -90,7 +90,7 @@ const Project = () => {
       projects: [
         {
           title: "ECommerce Interface in Figma",
-          image: ecfigma,
+          image: "/ec-figma.png",
           description:
             "Analytics dashboard with clean and user-friendly interface design",
           link: "https://www.figma.com/community/file/1511787994265323577/dream-spotsweets-snacks",
@@ -112,7 +112,7 @@ const Project = () => {
       projects: [
         {
           title: "Smart Waste Management System",
-          image: swmsImg,
+          image:  "/SWMS.png",
           description:
             "IoT-enabled waste management solution with real-time monitoring",
           link: "https://github.com/LOGESH-D/Smart-Waste-Management-System",

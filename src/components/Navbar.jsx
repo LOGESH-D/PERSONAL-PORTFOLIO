@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
-import resume from "../assets/LOGESH-D.pdf";
+// import resume from "../assets/LOGESH-D.pdf";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -139,7 +139,7 @@ const Navbar = () => {
             {/* PDF Preview */}
             <div className="flex-1 p-2 sm:p-3 overflow-auto text-center">
               <iframe
-                src={resume}
+                src="/LOGESH-D.pdf"
                 title="Resume"
                 className="w-full h-full rounded-lg"
               />
