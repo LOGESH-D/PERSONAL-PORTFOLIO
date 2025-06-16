@@ -21,7 +21,7 @@ const Navbar = () => {
     return "HEY THERE!";
   };
 
-  // ✅ Use import.meta.env.BASE_URL for correct path on GitHub Pages
+ 
   const resumePath = `${import.meta.env.BASE_URL}LOGESH-D.pdf`;
 
   const handleResumeDownload = () => {
