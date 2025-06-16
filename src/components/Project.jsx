@@ -21,6 +21,9 @@ const Project = () => {
     return () => clearTimeout(timer);
   }, []);
 
+  const getImagePath = (image) =>
+    `${import.meta.env.BASE_URL}${image.replace(/^\//, "")}`;
+
   const projectCategories = {
     all: {
       title: "All Projects",
@@ -106,7 +109,7 @@ const Project = () => {
       projects: [
         {
           title: "Smart Waste Management System",
-          image:  "/SWMS.png",
+          image: "/SWMS.png",
           description:
             "IoT-enabled waste management solution with real-time monitoring",
           link: "https://github.com/LOGESH-D/Smart-Waste-Management-System",
@@ -240,15 +243,15 @@ const Project = () => {
                   >
                     <div className="relative h-48 sm:h-56 lg:h-64 overflow-hidden">
                       <img
-                        src={project.image}
+                        src={getImagePath(project.image)}
                         alt={project.title}
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 md:block hidden" />
                       <div
                         className="absolute inset-0 flex items-center justify-center gap-4
-                        opacity-100 md:opacity-0 md:group-hover:opacity-100
-                        transition-all duration-300"
+                      opacity-100 md:opacity-0 md:group-hover:opacity-100
+                      transition-all duration-300"
                       >
                         <a
                           href={project.link}
