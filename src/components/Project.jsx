@@ -40,7 +40,7 @@ const Project = () => {
           title: "Chat-Bot",
           image: "/chatbot.png",
           description:
-            "A responsive food ordering interface built with modern frontend technologies",
+            "Building a chatbot project with React.js, Tailwind CSS, and APIs to deliver interactive conversations and real-time responses.",
           link: "https://github.com/LOGESH-D/Chat-Bot",
           github: "https://github.com/LOGESH-D/Chat-Bot",
           technologies: ["React js", "Tailwind CSS"],
