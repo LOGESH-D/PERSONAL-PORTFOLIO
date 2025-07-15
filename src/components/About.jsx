@@ -12,6 +12,7 @@ import {
   MessageSquareText,
   RefreshCcw,
   Layers3,
+  Wrench,
 } from "lucide-react";
 import {
   FaPython,
@@ -71,6 +72,7 @@ const About = () => {
       skills: [
         { name: "ReactJS", icon: <GrReactjs /> },
         { name: "Tailwind CSS", icon: <RiTailwindCssFill /> },
+        { name: "Frontend Design Principles", icon: <Palette /> },
       ],
     },
     design: {
@@ -82,7 +84,6 @@ const About = () => {
         { name: "Canva", icon: <SiCanva /> },
         { name: "Wireframing", icon: <Figma /> },
         { name: "Prototyping", icon: <Figma /> },
-        { name: "Frontend Design Principles", icon: <Palette /> },
       ],
     },
     datavisualization: {
@@ -91,20 +92,19 @@ const About = () => {
       icon: <BarChart3 />,
       skills: [
         { name: "Power BI", icon: <VscGraph /> },
-        { name: "E-Excel", icon: <PiMicrosoftExcelLogoBold /> },
+        { name: "Excel", icon: <PiMicrosoftExcelLogoBold /> },
       ],
     },
     tools: {
       title: "Tools",
       shortTitle: "Tools",
-      icon: <BarChart3 />,
+      icon: <Wrench />,
       skills: [
-        { name: "Power BI", icon: <VscGraph /> },
         { name: "Git", icon: <FaGitAlt /> },
         { name: "GitHub", icon: <FaGithub /> },
         { name: "VS Code", icon: <VscVscode /> },
-        { name: "Microsoft Word Document", icon: <PiMicrosoftWordLogo /> },
-        { name: "E-Excel", icon: <PiMicrosoftExcelLogoBold /> },
+        { name: "Microsoft Word", icon: <PiMicrosoftWordLogo /> },
+        { name: "Microsoft Excel", icon: <PiMicrosoftExcelLogoBold /> },
         { name: "PowerPoint", icon: <PiMicrosoftPowerpointLogo /> },
       ],
     },
@@ -122,6 +122,7 @@ const About = () => {
       ],
     },
   };
+  
 
   const allSkills = Object.values(baseCategories).flatMap((cat) => cat.skills);
 
@@ -183,11 +184,13 @@ const About = () => {
               </span>
             </h1>
             <p className="text-sm sm:text-base lg:text-lg text-gray-400 font-medium max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              I'm a frontend developer focused on building beautiful,
-              interactive and accessible web experiences. From concept to
-              execution, my work blends creativity with code. Currently
-              developing projects using the MERN stack, specializing in clean
-              UI, UX, and responsive design.
+              I'm a passionate Frontend Developer and UI/UX Designer with
+              experience in building responsive web applications using HTML,
+              CSS, JavaScript, PHP, React (JSX), and Tailwind CSS. I enjoy
+              creating clean, user-friendly interfaces and have also explored
+              innovative solutions in the IoT domain. With a strong focus on
+              design and functionality, I aim to build projects that deliver
+              real value and great user experiences.
             </p>
 
             <div className="pt-2 sm:pt-4 flex flex-col xs:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">

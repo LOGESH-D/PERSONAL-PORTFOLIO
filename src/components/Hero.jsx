@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FaArrowRight, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaArrowRight, FaGithub, FaLinkedin, FaFigma } from "react-icons/fa";
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -13,7 +13,6 @@ const Hero = () => {
 
   return (
     <div className="min-h-screen bg-black text-white flex items-center justify-center px-4 sm:px-6 pt-20 relative overflow-hidden">
-
       <div className="absolute inset-0 overflow-hidden">
         <div
           className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-orange-500/10 blur-3xl animate-pulse"
@@ -24,7 +23,6 @@ const Hero = () => {
           style={{ animationDuration: "12s" }}
         ></div>
       </div>
-
 
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:50px_50px] opacity-30"></div>
 
@@ -61,7 +59,7 @@ const Hero = () => {
               UI / UX Designer,
             </div>
             <div className="hover:text-orange-400 transition-colors duration-300">
-              Power BI
+              Data Visualization.
             </div>
           </h1>
         </div>
@@ -103,6 +101,14 @@ const Hero = () => {
           {/* Social Links */}
           <div className="flex space-x-6 mt-2">
             <a
+              href="https://www.linkedin.com/in/logesh-d-6a155a265?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-2xl hover:text-orange-500 transition-all duration-300 transform hover:scale-110"
+            >
+              <FaLinkedin />
+            </a>
+            <a
               href="https://github.com/LOGESH-D"
               target="_blank"
               rel="noopener noreferrer"
@@ -110,13 +116,14 @@ const Hero = () => {
             >
               <FaGithub />
             </a>
+
             <a
-              href="https://www.linkedin.com/in/logesh-d-6a155a265?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              href="https://www.figma.com/@lokiiii"
               target="_blank"
               rel="noopener noreferrer"
               className="text-2xl hover:text-orange-500 transition-all duration-300 transform hover:scale-110"
             >
-              <FaLinkedin />
+              <FaFigma />
             </a>
           </div>
         </div>
