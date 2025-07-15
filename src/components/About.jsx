@@ -29,6 +29,11 @@ import { GrMysql, GrReactjs } from "react-icons/gr";
 import { RiTailwindCssFill, RiTeamFill } from "react-icons/ri";
 import { SiCanva } from "react-icons/si";
 import { VscVscode, VscGraph } from "react-icons/vsc";
+import {
+  PiMicrosoftWordLogo,
+  PiMicrosoftExcelLogoBold,
+  PiMicrosoftPowerpointLogo,
+} from "react-icons/pi";
 
 const About = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -46,7 +51,7 @@ const About = () => {
 
   const baseCategories = {
     programming: {
-      title: "Programming Languages",
+      title: "Programming",
       shortTitle: "Programming",
       icon: <Code2 />,
       skills: [
@@ -60,7 +65,7 @@ const About = () => {
       ],
     },
     frontend: {
-      title: "Frontend Technologies",
+      title: "Frontend",
       shortTitle: "Frontend",
       icon: <Monitor />,
       skills: [
@@ -80,6 +85,15 @@ const About = () => {
         { name: "Frontend Design Principles", icon: <Palette /> },
       ],
     },
+    datavisualization: {
+      title: "Data Visualization",
+      shortTitle: "Data Visualization",
+      icon: <BarChart3 />,
+      skills: [
+        { name: "Power BI", icon: <VscGraph /> },
+        { name: "E-Excel", icon: <PiMicrosoftExcelLogoBold /> },
+      ],
+    },
     tools: {
       title: "Tools",
       shortTitle: "Tools",
@@ -89,6 +103,9 @@ const About = () => {
         { name: "Git", icon: <FaGitAlt /> },
         { name: "GitHub", icon: <FaGithub /> },
         { name: "VS Code", icon: <VscVscode /> },
+        { name: "Microsoft Word Document", icon: <PiMicrosoftWordLogo /> },
+        { name: "E-Excel", icon: <PiMicrosoftExcelLogoBold /> },
+        { name: "PowerPoint", icon: <PiMicrosoftPowerpointLogo /> },
       ],
     },
     softSkills: {
