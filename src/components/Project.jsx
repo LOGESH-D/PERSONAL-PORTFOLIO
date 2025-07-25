@@ -41,7 +41,7 @@ const Project = () => {
           image: "/chatbot.png",
           description:
             "Build a chatbot project with React.js, Tailwind CSS, and APIs to deliver interactive conversations and real-time responses.",
-          link: "https://github.com/LOGESH-D/Chat-Bot",
+          link: "https://logesh-d.github.io/DREAM-SPOT-EC/",
           github: "https://github.com/LOGESH-D/Chat-Bot",
           technologies: ["React js", "Tailwind CSS"],
         },
